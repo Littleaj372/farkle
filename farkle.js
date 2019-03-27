@@ -12,7 +12,9 @@ class Farkle {
     }
 
     addPlayer(playerName){
-        this.players.push(playerName);
+        var newPlayer = new Player();
+        newPlayer.name = playerName;
+        this.players.push(newPlayer);
     }
 
     drawGame(){
